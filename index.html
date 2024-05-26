@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+  </head>
+  <body>
+    <a-scene
+      mindar-image="imageTargetSrc: ./\muhkito.mind; maxTrack: 10"
+      color-space="sRGB"
+      renderer="colorManagement: true, physicallyCorrectLights"
+      vr-mode-ui="enabled: false"
+      device-orientation-permission-ui="enabled: false"
+    >
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      <a-assets>
+        <a-asset-item
+          id="pot"
+          src="./assets/3d-models/tumbuhan/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="semak"
+          src="./assets/3d-models/tumbuhan2/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="daun"
+          src="./assets/3d-models/tumbuhan3/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="rumput"
+          src="./assets/3d-models/tumbuhan4/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="pohonmati"
+          src="./assets/3d-models/tumbuhan5/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="pohonhidup"
+          src="./assets/3d-models/tumbuhan6/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="jamur"
+          src="./assets/3d-models/tumbuhan7/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="tanamanhias"
+          src="./assets/3d-models/tumbuhan8/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="kaktus"
+          src="./assets/3d-models/tumbuhan9/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="rumput2"
+          src="./assets/3d-models/tumbuhan10/scene.gltf"
+        ></a-asset-item>
+      </a-assets>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model
+          src="#pot"
+          rotation="-90 0 0"
+          position="0 -1 0"
+          scale="0.01 0.01 0.01"
+          animation-mixer
+        ></a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 1">
+        <a-gltf-model
+          src="#semak"
+          rotation="-90 0 0"
+          position="0 -5 0"
+          scale="1 1 1"
+          animation-mixer
+        ></a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 2">
+        <a-gltf-model
+          src="#daun"
+          rotation="-90 0 0"
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          animation-mixer
+        ></a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 3">
+        <a-gltf-model
+          src="#rumput"
+          rotation="-90 0 0"
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          animation-mixer
+        ></a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 4">
+        <a-gltf-model
+          src="#pohonmati"
+          rotation="-90 0 0"
+          position="0 0 0"
+          scale="1 1 1"
+          animation-mixer
+        ></a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 5">
+        <a-gltf-model
+          src="#pohonhidup"
+          rotation="-90 0 0"
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          animation-mixer
+        ></a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 6">
+        <a-gltf-model
+          src="#jamur"
+          rotation="-90 0 0"
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          animation-mixer
+        ></a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 7">
+        <a-gltf-model
+          src="#tanamanhias"
+          rotation="-90 0 0"
+          position="0 0 0"
+          scale="1 1 1"
+          animation-mixer
+        ></a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 8">
+        <a-gltf-model
+          src="#kaktus"
+          rotation="-90 0 0"
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+          animation-mixer
+        ></a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 9">
+        <a-gltf-model
+          src="#rumput2"
+          rotation="-90 0 0"
+          position="0 0 0"
+          scale="0.3 0.3 0.3"
+          animation-mixer
+        ></a-gltf-model>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
